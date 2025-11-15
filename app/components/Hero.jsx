@@ -291,7 +291,7 @@ const Hero = () => {
                <p ref={text4}>WHAT WE <br/> OFFER</p>
               <Image 
               src="/images/arrow4.svg" 
-              className='arrow2'
+              className='arrow2 arrow4'
               fill
               priority
               alt='vector'

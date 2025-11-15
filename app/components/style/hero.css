@@ -248,6 +248,14 @@ background: linear-gradient(
     margin-bottom: 0.2rem;
 }
 
+
+.arrow4{
+    width: 1rem !important;
+    position: relative !important;
+    margin-bottom: 0.2rem;
+}
+
+
 .abs-flex{
     display: flex;
     align-items: center;
