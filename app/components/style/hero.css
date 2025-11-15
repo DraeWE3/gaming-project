@@ -1,0 +1,279 @@
+
+
+
+@font-face {
+  font-family: "grave-med";
+  src: url("../../../public/font/fonnts.com-Gravesend_Sans_Medium.otf") format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "grave-light";
+  src: url("../../../public/font/fonnts.com-Gravesend_Sans_Light.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "grave-bold";
+  src: url("../../../public/font/fonnts.com-Gravesend_Sans_Bold.otf") format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "nasa";
+  src: url("../../../public/font/NASALIZA.TTF") format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "nasa-med";
+  src: url("../../../public/font/Nasa.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "hell-reg";
+  src: url("../../../public/font/Helvetica.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+.hero-mid{
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80% !important   ;
+    object-fit: cover !important;
+    height: auto !important;
+}
+
+.side-blur{
+      position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important   ;
+    object-fit: cover !important;
+    height: 90% !important;
+    z-index: 3;
+}
+
+.top-blur{
+      position: absolute !important;
+    top: 0% !important;
+    left: 50% !important;
+    transform: translate( -50%) !important;
+    width: 100% !important   ;
+    object-fit: cover !important;
+    height: auto !important;
+    z-index: 60 !important;
+}
+
+.rocket{
+    position: relative !important;
+    z-index: 0 !important;
+    width: 20rem !important;
+    height: auto !important;
+}
+
+
+.nasa{
+    font-family: nasa !important;
+    font-style: normal !important;
+
+}
+
+
+.section-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
+/* First item - blurred input box */
+.blur-box {
+  width: 95%; 
+  height: 2.8rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: linear-gradient(
+  to right,
+  #d127fc1e 0%,
+  #2c72ff21 100%
+
+);
+} 
+
+.blur-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  background: transparent;
+  font-size: 1rem;
+  color: white;
+}
+
+
+.blur-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Second item - image background with centered content */
+.image-box {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: url("../../../public/images/micro.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+
+.btn-start {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1px;
+}
+
+        .gradient-container2 {
+            position: relative;
+            border-radius: 1.3rem;
+background: linear-gradient(
+  to right,
+  #ffffff9c 0%,
+  rgba(0, 0, 0, 0) 30%,
+  rgba(0, 0, 0, 0) 70%,
+  #ffffff88 100%
+
+);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            z-index: 0;
+            position: relative;
+        }
+
+        .inner-content2 {
+            width: 100%;
+            height: 100%;
+            font-family: grave-med;
+            background: linear-gradient(
+  to bottom,
+  #4D0A76 0%,
+  #D227FC 100%
+
+);
+            border-radius: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            z-index: 0;
+            position: relative;
+        }
+
+        .inner-content2 a{
+            font-family: hell-reg;
+        }
+
+
+         .link2 {
+            padding: 0.8rem 1.2rem;
+        }
+
+
+.abs{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+
+
+
+.vector1{
+    width: 12rem !important;
+    position: relative !important;
+    transform-origin: right;
+}
+
+.vector2{
+    width: 12rem !important;
+    position: relative !important;
+    transform-origin: left;
+}
+
+.arrow1{
+    width: 0.7rem !important;
+    position: relative !important;
+    margin-bottom: 0.4rem;
+}
+
+.arrow2{
+    width: 1.5rem !important;
+    position: relative !important;
+    margin-bottom: 0.2rem;
+}
+
+.abs-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abs-flex p{
+    font-size: 13px;
+    text-align: end;
+    font-family: grave-bold;
+    margin-bottom: -1.3rem;
+    margin-right: 0.4rem;
+}
+
+.abs-flex2 p{
+  text-align: start;
+}
+
+
+.abs-bottom{
+  margin-top: 2rem;
+}
+
+  @media (max-width: 770px) {
+    .abs{
+      display: none;
+      background-color: red !important;
+    }
+  }

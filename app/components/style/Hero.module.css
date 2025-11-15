@@ -1,0 +1,297 @@
+/* /components/Hero.module.css */
+
+.heroContainer {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #0E0216;
+  padding-top: 5%;
+}
+
+
+.sideLabelsContainer {
+  display: none;
+}
+
+.sideLabel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sideLabelLeft {
+  left: 2rem;
+  flex-direction: row;
+}
+
+.sideLabelRight {
+  right: 2rem;
+  flex-direction: row-reverse;
+}
+
+.sideLabelBottom {
+  top: 60%;
+}
+
+.sideLabelText {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.sideLabelTextRight {
+  text-align: left;
+}
+
+.sideLabelTextLeft {
+  text-align: right;
+}
+
+.svgContainer {
+  position: relative;
+}
+
+.arrowGlow {
+  position: absolute;
+  bottom: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: linear-gradient(to right, rgb(168, 85, 247), rgb(34, 211, 238));
+  border-radius: 9999px;
+  opacity: 0;
+  filter: blur(1px);
+}
+
+.arrowGlowLeft {
+  right: 0.5rem;
+}
+
+.arrowGlowRight {
+  left: 0.5rem;
+}
+
+.mainContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 8rem 1rem 4rem;
+}
+
+.rocketContainer {
+  margin-bottom: 2rem;
+  position: relative;
+ 
+}
+
+.rocketWrapper {
+  position: relative;
+}
+
+.rocketInner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* .rocketBody {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgb(192, 132, 252), rgb(244, 114, 182), rgb(34, 211, 238));
+  border-radius: 9999px 9999px 0 0;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+} */
+
+/* .rocketBodyInner {
+  position: absolute;
+  inset: 0.5rem;
+  background: linear-gradient(to bottom, rgba(216, 180, 254, 0.5), rgba(249, 168, 212, 0.5));
+  border-radius: 9999px 9999px 0 0;
+} */
+
+.rocketGlow1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8rem;
+  height: 4rem;
+  background: linear-gradient(to top, rgb(250, 204, 21), rgb(192, 132, 252), transparent);
+  filter: blur(2.5rem);
+  opacity: 0.8;
+}
+
+.rocketGlow2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 3rem;
+  background: white;
+  filter: blur(1.5rem);
+  opacity: 0.6;
+}
+
+.searchBarContainer {
+  width: 100%;
+  max-width: 42rem;
+  margin-bottom: 3rem;
+  opacity: 0;
+}
+
+.searchBarWrapper {
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgba(88, 28, 135, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 9999px;
+  color: white;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.15);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.searchInput:focus {
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.searchButton {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, rgb(147, 51, 234), rgb(219, 39, 119));
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.searchButton:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.searchIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: white;
+}
+
+.headline {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.headlineWord {
+  display: block;
+  opacity: 0;
+  font-style: italic;
+}
+
+.headlineWord1 {
+  background: linear-gradient(to right, rgb(244, 114, 182), rgb(192, 132, 252), rgb(244, 114, 182));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headlineWord2 {
+  background: linear-gradient(to right, rgb(192, 132, 252), rgb(244, 114, 182), rgb(192, 132, 252));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  max-width: 48rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  padding: 0 1rem;
+  opacity: 0;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  background: linear-gradient(to right, #b800ff, #5d00ff);
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 0 40px rgba(184, 0, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  box-shadow: 0 0 60px rgba(184, 0, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .rocketWrapper {
+    width: 24rem;
+    height:24rem;
+  }
+
+  .headline {
+    font-size: 3.75rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sideLabelsContainer {
+    display: block;
+  }
+
+  .headline {
+    font-size: 4.5rem;
+  }
+
+  .subtext {
+    font-size: 1.125rem;
+  }
+}
